@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ccff00;
+  text-align: center; 
+}
+
+
+header {
+  background-color: #121212;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ccff00;
+}
+
+/* Banner */
+.banner {
+  text-align: center; 
+}
+
+.banner img {
+  width: 90%; 
+  max-width: 1200px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+.carrossel {
+
+  margin: 40px auto;
+  width: 90%; 
+  max-width: 1200px;
+  border-radius: 10px;
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.carrossel img{
+flex: 0 0 calc(100% / 6 - 20px);
+margin-right: 20px;
+}
+
+.slides {
+  display: flex;
+  justify-content: space-between; /* Distribui o espaço entre as imagens */
+  flex-wrap: wrap; /* Permite que as imagens quebrem a linha se não couberem */
+  gap: 20px; /* Espaço entre as imagens */
+  width: 100%; /* Ocupa a largura total do contêiner */
+  /* ANIMAÇÃO REMOVIDA */
+}
+
+.slides img {
+
+  width: calc(25% - 15px); 
+  border-radius: 10px;
+  flex-grow: 1; 
+  height: auto; 
+  object-fit: cover;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #ccff00;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.slideshow-container {
+  max-width: 1000px; 
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 10; 
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171; 
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

@@ -18,7 +18,6 @@ header {
   top: 0;
   z-index: 1000;
 }
-
 .logo img {
   height: 50px;
 }
@@ -30,6 +29,7 @@ nav ul {
   margin: 0;
 }
 
+}
 nav a {
   text-decoration: none;
   color: white;
@@ -39,6 +39,34 @@ nav a {
 
 nav a:hover {
   color: #ccff00;
+}
+
+.barra-pesquisa {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 20px;
+}
+
+.barra-pesquisa input{
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.barra-pesquisa button {
+  padding: 6px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0 ;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.barra-pesquisa button :hover {
+  background-color: #45a049;
 }
 
 /* Banner */

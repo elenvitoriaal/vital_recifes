@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1C1C1C;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #C7F805;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  position: relative;
+  background-color: #1c1c1c;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header img {
+  max-width: 300px;
+}
+
+/* CONTAINER PARA POSICIONAR O BOTÃO VOLTAR */
+.voltar-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+/* BOTÃO VOLTAR - Estilo semelhante ao Entrar */
+.btn-voltar {
+  background-color: #ccff00; /* Cor de fundo do botão */
+  color: #1C1C1C; /* Cor do texto no botão (cor do background do body para contraste) */
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block; /* Necessário para aplicar padding a um link */
+}
+
+.btn-voltar:hover {
+  background-color: #A9D604; /* Cor de hover */
+}
+
+
+/* --- INÍCIO DO ESTILO DO FORMULÁRIO --- */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.container p a{
+  color: #C7F805;
+  margin-top: 15px;
+}
+
+.login-box {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 40px 30px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px #ccff00;
+  text-align: center;
+  border: 2px solid #ccff00;
+}
+
+.login-box h2 {
+  color: #ccff00;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccff00;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #ccff00;
+  font-size: 14px;
+}
+
+.input-group input::placeholder {
+  color: #9bbd03; /* Cor alterada para ter um pouco mais de contraste que a original */
+}
+
+/* Estilo do botão de login */
+button {
+  background-color: #ccff00;
+  color: #1C1C1C;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #A9D604;
+}
+
+.input-group input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #ccff00;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .voltar-container {
+    top: 15px;
+    left: 15px;
+  }
+  
+  .btn-voltar {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  .login-box {
+    padding: 30px 20px;
+  }
+}

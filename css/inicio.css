@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
+  font-family: "Roboto", sans-serif;
+  background-color: #181818;
   color: #ccff00;
   text-align: center;
 }
@@ -17,7 +17,41 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  font-family: "Roboto", sans-serif;
 }
+
+/*INICIO BARRA DE PESQUISA*/
+/*
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-bar button {git 
+  background-color: #ccff00;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #ccff00;
+}
+*/
+/*FIM BARRA PESQUISA*/
+
 .logo img {
   height: 50px;
 }
@@ -27,9 +61,10 @@ nav ul {
   display: flex;
   gap: 25px;
   margin: 0;
+  text-align: center;
 }
 
-}
+
 nav a {
   text-decoration: none;
   color: white;
@@ -122,10 +157,11 @@ width: 200px;
 
 footer {
   text-align: center;
-  background-color: #ccff00;
-  color: rgb(0, 0, 0);
+  background-color: #121212;
+  color: white;
   padding: 15px;
   margin-top: 40px;
+  font-family: "Roboto", sans-serif;
 }
 
 .slideshow-container {
@@ -138,7 +174,7 @@ footer {
   display: none;
 }
 
-.prev, .next {
+.prev .next {
   cursor: pointer;
   position: absolute;
   top: 50%;

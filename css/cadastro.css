@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #1C1C1C;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ccff00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Estilo para posicionar o botão Voltar */
+.voltar {
+  width: 100%;
+  padding: 20px;
+  /* Garante que o botão fique no canto superior esquerdo */
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 10; /* Garante que fique acima de outros elementos se houver sobreposição */
+}
+
+/* Estilo do botão Voltar (semelhante ao Cadastrar) */
+.btn-voltar {
+  background-color: #ccff00;
+  color: #1C1C1C;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s;
+  text-decoration: none; /* Remove o sublinhado do link */
+  display: inline-block; /* Permite que padding e margem funcionem corretamente */
+}
+
+.btn-voltar:hover {
+  background-color: #C7F805; /* Um verde ligeiramente diferente no hover */
+}
+
+
+header {
+  background-color: #1C1C1C;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px; /* Adiciona margem superior para não sobrepor o botão 'Voltar' */
+}
+
+header img {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  color: #C7F805; /* Corrigido para ser visível no fundo 1C1C1C */
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.imagens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin: 40px 0;
+  position: relative;
+}
+
+.foto1 img, .foto2 img {
+  max-width: 220px;
+  height: auto;
+}
+
+.foto1 {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.foto2 {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+form {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(199, 248, 5, 0.2);
+  z-index: 2;
+}
+
+fieldset {
+  border: 2px solid #ccff00;
+  border-radius: 8px;
+  padding: 20px;
+
+}
+
+legend {
+  color: #C7F805;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccff00;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #ccff00;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #9bbd03;
+}
+
+button[type="submit"] { /* Seletor mais específico para o botão de cadastro */
+  background-color: #ccff00;
+  color: #1C1C1C;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s;
+  margin: 20px auto 0 auto; /* Ajuste para o botão Cadastrar */
+  display: flex;
+}
+
+button[type="submit"]:hover {
+  background-color: #C7F805; /* Um verde ligeiramente diferente no hover */
+}
+
+footer {
+  background-color: #1C1C1C;
+  color: #C7F805;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  border-top: 2px solid #ccff00;
+  font-size: 14px;
+  margin-top: auto; /* Empurra o footer para o final da página */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  header img {
+      max-width: 150px;
+  }
+  
+  .foto1, .foto2 {
+    position: static;
+    transform: none;
+    display: block;
+    text-align: center;
+  }
+
+  .imagens {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .voltar {
+      padding: 10px;
+  }
+  
+  header {
+      margin-top: 40px;
+  }
+}
+
+/* A query original estava muito baixa, ajustei para 600px, 
+  mas mantive a original caso seja importante o breakpoint
+  @media (max-width: 90px) { ... }
+*/

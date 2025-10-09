@@ -4,6 +4,35 @@ body {
     background-color: #000;
     color: #ccff00;
 }
+
+.voltar-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+/* BOTÃO VOLTAR - Estilo semelhante ao Entrar */
+.btn-voltar {
+  background-color: #ccff00; /* Cor de fundo do botão */
+  color: #1C1C1C; /* Cor do texto no botão (cor do background do body para contraste) */
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block; /* Necessário para aplicar padding a um link */
+}
+
+.btn-voltar:hover {
+  background-color: #A9D604; /* Cor de hover */
+}
+
+
+
 .top-header {
   display: flex;
   align-items: stretch; 
@@ -134,6 +163,7 @@ h1 {
 .clientes-amam {
   text-align: center;
   padding: 40px 20px;
+
 }
 .clientes-amam h1 {
   font-size: 32px;

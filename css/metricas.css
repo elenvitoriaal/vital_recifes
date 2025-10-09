@@ -193,9 +193,9 @@ h1 {
 footer {
     display: flex;
     height: 60px;
-    background-color: #ccff00;
+    background-color: #121212;
     text-align: center;
     justify-content: center;
-    color: #000;
+    color: #fff;
     padding-top: 8px;
 }

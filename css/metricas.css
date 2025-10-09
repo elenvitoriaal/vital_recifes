@@ -10,16 +10,35 @@ header {
     flex-direction: column;
     align-items: flex-start;
 }
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 10px;
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 40px;
+    color: #fff;
 }
-.header.box {
-    width: 300px;
-    height: 40px;
-    background-color: white;
+.logo-area img {
+    height: 80px;
+}
+.profile-area {
+    max-width: 400px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccff00;
+}
+.profile-area h2 {
+    margin: 0 0 10px;
+    color: #ccff00;
+}
+.profile-area p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+.progress {
+    height: 100%;
+    background-color: #ccff00;
 }
 main {
     text-align: center;

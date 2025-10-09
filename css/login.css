@@ -112,22 +112,21 @@ header img {
 }
 
 /* Estilo do botão de login */
-button {
-  background-color: #ccff00;
-  color: #1C1C1C;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 30px;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-top: 10px;
+.btn-login {
+    display: inline-block;
+    background-color: #ccff00;
+    color: rgb(3, 3, 3);
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
 }
 
-button:hover {
-  background-color: #A9D604;
+.btn-login:hover {
+    background-color: #fff;
 }
+
 
 .input-group input:focus {
   outline: none;
